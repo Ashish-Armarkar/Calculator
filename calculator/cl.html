@@ -1,0 +1,147 @@
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <title>Calculator using javascript</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center; position: relative; top: 15%;">
+      <h1 style="font-family: cursive; color: rgb(21, 0, 4);">Calculator</h1>
+    </div>
+    <div class="container">
+      <div>
+        <input type="text" name="display" class="display" id="display"  placeholder="0" inputmode="numeric" />
+      </div>
+      <div class="btnCont">
+        <div class="SubBtn">
+          <input
+            type="button"
+            value="AC"
+            onclick="display.value = '' "
+            class="operator btnOp"
+
+          />
+          <input
+            type="button"
+            value="DE"
+            onclick="display.value = display.value.toString().slice(0,-1)"
+            class="operator btnOp"
+          />
+          <input
+            type="button"
+            value="."
+            onclick="display.value += '.' "
+            class="operator btnOp"
+          />
+          <input
+            type="button"
+            value="/"
+            onclick="display.value += '/' "
+            class="operator btnOp"
+          />
+        </div>
+
+        <div class="SubBtn">
+          <input
+            type="button"
+            value="7"
+            onclick="display.value += '7'"
+            class="btnOp"
+          />
+          <input
+            type="button"
+            value="8"
+            onclick="display.value += '8' "
+            class="btnOp"
+          />
+          <input
+            type="button"
+            value="9"
+            onclick="display.value += '9' "
+            class="btnOp"
+          />
+          <input
+            type="button"
+            value="*"
+            onclick="display.value += '*' "
+            class="btnOp"
+          />
+        </div>
+
+        <div class="SubBtn">
+          <input
+            type="button"
+            value="4"
+            onclick="display.value += '4' "
+            class="btnOp"
+          />
+          <input
+            type="button"
+            value="5"
+            onclick="display.value += '5' "
+            class="btnOp"
+          />
+          <input
+            type="button"
+            value="6"
+            onclick="display.value += '6' "
+            class="btnOp"
+          />
+          <input
+            type="button"
+            value="-"
+            onclick="display.value += '-' "
+            class="btnOp"
+          />
+        </div>
+        <div class="SubBtn">
+          <input
+            type="button"
+            value="1"
+            onclick="display.value += '1' "
+            class="btnOp"
+          />
+          <input
+            type="button"
+            value="2"
+            onclick="display.value += '2' "
+            class="btnOp"
+          />
+          <input
+            type="button"
+            value="3"
+            onclick="display.value += '3' "
+            class="btnOp"
+          />
+          <input
+            type="button"
+            value="+"
+            onclick="display.value += '+' "
+            class="btnOp"
+          />
+        </div>
+
+        <div class="SubBtn">
+          <input
+            type="button"
+            value="00"
+            onclick="display.value += '00' "
+            class="btnOp"
+          />
+          <input
+            type="button"
+            value="0"
+            onclick="display.value += '0' "
+            class="btnOp"
+          />
+          <input
+            type="button"
+            value="="
+            onclick="display.value = eval(display.value)"
+            class="equal operator btnOp eqBtn"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
